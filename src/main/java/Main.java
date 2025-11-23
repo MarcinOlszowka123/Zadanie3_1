@@ -10,7 +10,7 @@ public class Main {
     } catch (Exception e) {
       height = 5;
     }
-    System.out.println("Podaj znak:np(*) ");
+    System.out.println("Podaj znak: np(*) ");
     String znak = sc.nextLine().trim();
     if (znak.length() == 0)
       znak = "*";
