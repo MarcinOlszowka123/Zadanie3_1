@@ -1,14 +1,21 @@
-// import static org.junit.jupiter.api.Assertions.assertEquals;
+import java.util.Scanner;
 
-// import org.junit.jupiter.api.Test;
-
-public class Main {
+public class choinka {
   public static void main(String[] args) {
-    System.out.println("Hello world!");
+    Scanner scan = new Scanner(System.in);
+    System.out.println("Podaj wysokosc choinki: ");
+    int height = 0;
+    try {
+      height = Integer.parseInt(scan.nextLine().trim());
+    } catch (Exception e) {
+      height = 5;
+    }
+
+    System.out.println("Podaj znak:np(*) ");
+    String znak = scan.nextLine().trim();
+    if (znak.length() == 0)
+      znak = "*";
+    char c = znak.charAt(0);
   }
 
-  // @Test
-  // void addition() {
-  //     assertEquals(2, 1 + 1);
-  // }
 }
