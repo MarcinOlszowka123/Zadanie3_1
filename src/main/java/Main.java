@@ -16,7 +16,7 @@ public class Main {
       znak = "*";
     char c = znak.charAt(0);
     for (int i = 1; i < height; i++) {
-      int stars = 2 * i + 1;
+      int stars = i + 1;
       int spaces = height - i - 1;
       for (int j = 0; j < spaces; j++)
         System.out.print("");
